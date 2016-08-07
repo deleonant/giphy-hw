@@ -4,7 +4,7 @@
 var topics = ["guitars", "music", "technology", "finance", "news", "travel", "sci-fi", "electronics"];
 var numGif = 10;
 var authKey = "&api_key=dc6zaTOxFJmzC&limit=10"
-var queryURLBase = "http://api.giphy.com/v1/gifs/search?q=";
+var queryURLBase = "https://api.giphy.com/v1/gifs/search?q=";
 
 
 
@@ -33,7 +33,7 @@ $('button').on('click', function() {
     var topic = $(this).data('type');
     console.log(topic);
 
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=dc6zaTOxFJmzC&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=dc6zaTOxFJmzC&limit=10";
     console.log(queryURL);
 
 //ajax call to the API
